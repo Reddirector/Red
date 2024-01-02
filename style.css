@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+}
+body {
+  background-color: rgb(31, 29, 28);
+}
+.border:hover {
+  border: 2px double orangered;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px;
+  width: 100%;
+  color: orangered;
+}
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background: url(LOGO.jpeg) no-repeat;
+  mix-blend-mode: color-dodge;
+  background-size: cover;
+}
+.navbartab {
+  position: relative;
+  top: 10px;
+  height: 100px;
+  width: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.toplogo {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 100%;
+}
+.photo {
+  width: 400px;
+  height: 400px;
+  background: url(LOGO.jpeg) no-repeat;
+  background-size: cover;
+  mix-blend-mode: color-dodge;
+  position: relative;
+  left: 150px;
+  border-radius: 30%;
+  border-top: 5px solid orangered;
+}
+.photo:hover {
+  width: 400px;
+  height: 400px;
+  transition: all ease-in-out 2s;
+  background: url(me.jpeg) no-repeat;
+  background-size: cover;
+}
+.infocontent {
+  height: 300px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40vh;
+  right: 100px;
+  font-size: 2rem;
+}
+.info {
+  height: 300px;
+  width: 600px;
+  position: absolute;
+  left: 80px;
+  font-size: 3rem;
+  color: orangered;
+}
+.normal {
+  color: aliceblue;
+}
+.info:hover {
+  scale: (1.2);
+  transition: all ease-in-out 2s;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  .navbartab {
+    height: 80px;
+    width: 100vh;
+  }
+  .toplogo {
+    height: 200px;
+  }
+  .photo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 75px;
+  }
+  .infocontent {
+    width: 300px;
+  }
+  .info {
+    width: 300px;
+  }
+}
+.small {
+  font-weight: 100;
+  font-size: 1.7rem;
+}
+@media only screen and (max-width: 455px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .infocontent {
+    position: absolute;
+    top: 50vh;
+  }
+  .info {
+    height: vh;
+  }
+  .small {
+    font-size: 1.5rem;
+  }
+  .info {
+    font-size: 1.7rem;
+  }
+}

@@ -83,10 +83,12 @@ body {
   color: aliceblue;
 }
 .info:hover {
-  scale: (1.2);
   transition: all ease-in-out 2s;
 }
 @media only screen and (max-width: 600px) {
+  * {
+    margin: 0px;
+  }
   .logo {
     width: 80px;
     height: 80px;
@@ -119,18 +121,44 @@ body {
   body {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
   .infocontent {
     position: absolute;
     top: 50vh;
-  }
-  .info {
-    height: vh;
   }
   .small {
     font-size: 1.5rem;
   }
   .info {
     font-size: 1.7rem;
+    position: relative;
+    left: 0px;
+  }
+  .photo {
+    position: relative;
+    left: 30px;
+  }
+  .photo:hover {
+    height: 200px;
+    width: 200px;
+  }
+  .toplogo {
+    height: 100px;
+    width: 100px;
+    left: 0px;
+  }
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+  .navbartab {
+    width: 200px;
+    left: 0px;
+  }
+  .navbar {
+    width: 455px;
+    display: flex;
+    justify-content: start;
   }
 }

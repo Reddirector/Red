@@ -2,10 +2,22 @@
   margin: 0px;
 }
 body {
-  background-color: rgb(31, 29, 28);
+  position: relative;
+  z-index: -1;
+  background-image: linear-gradient(
+    to right bottom,
+    #ff5349,
+    #bd3b44,
+    #7c2937,
+    #3f1a22,
+    #000000
+  );
 }
 .border:hover {
-  border: 2px double orangered;
+  border: 2px double #000;
+}
+.color:hover {
+  color: white;
 }
 .navbar {
   display: flex;
@@ -77,88 +89,146 @@ body {
   position: absolute;
   left: 80px;
   font-size: 3rem;
-  color: orangered;
+  color: white;
 }
 .normal {
-  color: aliceblue;
+  color: orangered;
+}
+.small {
+  font-size: 1.4rem;
 }
 .info:hover {
   transition: all ease-in-out 2s;
 }
-@media only screen and (max-width: 600px) {
+.link {
+  height: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-brands {
+  color: aliceblue;
+}
+.fa-brands:hover {
+  color: #6f686d;
+}
+@media screen and (max-width: 414px) {
   * {
     margin: 0px;
   }
-  .logo {
-    width: 80px;
-    height: 80px;
-  }
-  .navbartab {
-    height: 80px;
-    width: 100vh;
-  }
-  .toplogo {
-    height: 200px;
-  }
-  .photo {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    left: 75px;
-  }
-  .infocontent {
-    width: 300px;
-  }
-  .info {
-    width: 300px;
-  }
-}
-.small {
-  font-weight: 100;
-  font-size: 1.7rem;
-}
-@media only screen and (max-width: 455px) {
   body {
-    display: flex;
-    flex-direction: column;
     width: 100vw;
-  }
-  .infocontent {
-    position: absolute;
-    top: 50vh;
-  }
-  .small {
-    font-size: 1.5rem;
-  }
-  .info {
-    font-size: 1.7rem;
+    height: 100vh;
     position: relative;
-    left: 0px;
+    z-index: -1;
+    background-image: linear-gradient(
+      to right bottom,
+      #ff5349,
+      #bd3b44,
+      #7c2937,
+      #3f1a22,
+      #000000
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  .photo {
-    position: relative;
-    left: 30px;
+  .border:hover {
+    border: 2px double #000;
   }
-  .photo:hover {
-    height: 200px;
-    width: 200px;
-  }
-  .toplogo {
-    height: 100px;
-    width: 100px;
-    left: 0px;
-  }
-  .logo {
-    height: 50px;
-    width: 50px;
-  }
-  .navbartab {
-    width: 200px;
-    left: 0px;
+  .color:hover {
+    color: white;
   }
   .navbar {
-    width: 455px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    width: 100%;
+    color: orangered;
+  }
+  .logo {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: url(LOGO.jpeg) no-repeat;
+    mix-blend-mode: color-dodge;
+    background-size: cover;
+  }
+  .navbartab {
+    position: relative;
+    top: 10px;
+    height: 100px;
+    width: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .toplogo {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 30%;
+  }
+  .photo {
+    width: 200px;
+    height: 200px;
+    background: url(LOGO.jpeg) no-repeat;
+    background-size: cover;
+    mix-blend-mode: color-dodge;
+    position: relative;
+    left: 30px;
+    border-radius: 30%;
+    border-top: 5px solid orangered;
+  }
+  .photo:hover {
+    width: 200px;
+    height: 200px;
+    transition: all ease-in-out 2s;
+    background: url(me.jpeg) no-repeat;
+    background-size: cover;
+  }
+  .infocontent {
+    width: 400px;
     display: flex;
     justify-content: start;
+    position: absolute;
+    top: 60vh;
+    left: 0px;
+    font-size: 2rem;
+  }
+  .info {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 40px;
+    font-size: 3rem;
+    color: white;
+  }
+  .normal {
+    color: orangered;
+  }
+  .small {
+    width: 60vw;
+    font-size: 1.4rem;
+  }
+  .info:hover {
+    transition: all ease-in-out 2s;
+  }
+  .link {
+    height: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .fa-brands {
+    color: aliceblue;
+  }
+  .fa-brands:hover {
+    color: #6f686d;
   }
 }

@@ -2,9 +2,10 @@
   margin: 0px;
 }
 body {
+  height: 100vh;
   position: relative;
   z-index: -1;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right bottom,
     #ff5349,
     #bd3b44,
@@ -12,9 +13,18 @@ body {
     #3f1a22,
     #000000
   );
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+a:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.704);
+  color: orangered;
 }
 .border:hover {
-  border: 2px double #000;
+  border-top: 2px double #000;
 }
 .color:hover {
   color: white;
@@ -23,7 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 200px;
+  height: 150px;
   width: 100%;
   color: orangered;
 }
@@ -52,7 +62,7 @@ body {
 .toplogo {
   display: flex;
   flex-direction: row;
-  height: 200px;
+  height: 100px;
   width: 100%;
 }
 .photo {
@@ -118,7 +128,7 @@ body {
   }
   body {
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     position: relative;
     z-index: -1;
     background-image: linear-gradient(
@@ -197,7 +207,7 @@ body {
     display: flex;
     justify-content: start;
     position: absolute;
-    top: 60vh;
+    top: 27rem;
     left: 0px;
     font-size: 2rem;
   }
